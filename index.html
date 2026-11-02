@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+    <title>Almost Universal</title>
+    <meta name="description" content="Almost Universal: an interactive archive of pictograms and symbol systems." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-v="landing">
+    <canvas id="cv"></canvas>
+    <div id="hv"></div>
+    <div id="wm">Almost Universal</div>
+    <div id="intro">
+      <p>Zoom in<br />or out to explore. <u id="got">Got it!</u></p>
+    </div>
+    <div id="info"></div>
+    <div id="land">
+      <div class="hd" style="left: calc(67 * var(--k)); top: calc(390 * var(--k))">☟</div>
+      <div
+        class="hd"
+        style="
+          left: calc(226.5 * var(--k));
+          top: calc(555.5 * var(--k));
+          transform: rotate(15.01deg);
+          animation-delay: -1.4s;
+        "
+      >
+        ☟
+      </div>
+      <div
+        class="hd"
+        style="
+          left: calc(448 * var(--k));
+          top: calc(444 * var(--k));
+          transform: rotate(16.66deg);
+          animation-delay: -2.8s;
+        "
+      >
+        ☟
+      </div>
+      <div
+        class="hd"
+        style="
+          left: calc(553.4 * var(--k));
+          top: calc(648.4 * var(--k));
+          transform: rotate(31.67deg);
+          animation-delay: -4.2s;
+        "
+      >
+        ☟
+      </div>
+      <div class="ln"></div>
+    </div>
+    <div id="decon" class="vw"></div>
+    <div id="ring" class="vw"></div>
+    <div id="grid" class="vw">
+      <div class="scr"><div id="gridc"></div></div>
+      <div class="ttl" style="top: 2vh">Saved</div>
+    </div>
+    <div id="index" class="vw"><div class="scr" id="ixs"></div></div>
+    <div id="history" class="vw">
+      <div class="scr hz" id="hist"></div>
+      <div class="ttl">History</div>
+    </div>
+    <div id="timeline" class="vw">
+      <div class="scr hz" id="tl"></div>
+      <div class="ttl">Timeline</div>
+    </div>
+    <button class="ic" id="bk" title="Saved">
+      <svg viewBox="0 0 40 52"><path d="M5 3H35V49L20 36 5 49Z" /></svg>
+    </button>
+    <button class="ic" id="fl" title="Filter">
+      <svg viewBox="0 0 52 52"><path d="M4 6H48L30 26V44L22 49V26Z" /></svg>
+    </button>
+    <button class="ic" id="rs" title="Scatter again">
+      <svg viewBox="0 0 52 52">
+        <path
+          d="M4 16H14C26 16 26 36 38 36H46M38 28L46 36 38 44M4 36H14C18 36 20 33 22 30M32 22C34 19 36 16 40 16H46M38 8L46 16 38 24"
+          stroke-linecap="round"
+        />
+      </svg></button
+    ><button class="ic" id="hb" title="Menu">
+      <svg viewBox="0 0 60 60">
+        <circle cx="30" cy="30" r="27" />
+        <path d="M16 19H44M16 30H44M16 41H44" stroke-linecap="round" />
+      </svg>
+    </button>
+    <div id="bar">
+      <div class="tg">
+        <button id="tIx"><i></i>Index</button><button id="tMap" class="on"><i></i>Map</button>
+      </div>
+    </div>
+    <button id="nF" title="Forward" class="off">
+      <svg viewBox="0 0 52 52"><path d="M6 26H44M30 11L45 26 30 41" /></svg>
+    </button>
+    <div id="nv">
+      <button id="nBack" title="Back">
+        <svg viewBox="0 0 52 52"><path d="M46 26H8M22 11L7 26 22 41" /></svg></button
+      ><button id="nHome" title="Explore">
+        <svg viewBox="0 0 52 52"><path d="M5 26L26 7 47 26M11 22V45H22V33H30V45H41V22" /></svg>
+      </button>
+    </div>
+    <div id="about">
+      <div class="bar"></div>
+      <p class="tx">
+        This page is devoted to the exploration and research of pictography. Our expanding web
+        archive showcases a diverse range of works centered around pictograms and language systems.
+        We welcome artistic, graphic, or research-based projects that contribute valuable ideas to
+        the discourse.
+      </p>
+      <u class="go" id="abg">Go Back</u>
+      <div class="hand" id="abh" title="Go back">☜</div>
+    </div>
+    <aside id="side">
+      <button id="sx" aria-label="Close">
+        <svg viewBox="0 0 24 24"><path d="M4 4L20 20M20 4L4 20" /></svg>
+      </button>
+      <div id="sc"></div>
+    </aside>
+    <div id="flt"></div>
+  
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
